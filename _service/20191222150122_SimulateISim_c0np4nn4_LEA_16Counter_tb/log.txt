@@ -1,0 +1,120 @@
+script> if [ -f   /opt/Xilinx/14.1/ISE_DS/settings32.sh ]; then 
+script>  source /opt/Xilinx/14.1/ISE_DS/settings32.sh >> /tmp/log 
+script> fi
+script> if [ -f   /opt/Xilinx/14.1/ISE_DS/settings64.sh ]; then
+script>  source /opt/Xilinx/14.1/ISE_DS/settings64.sh >> /tmp/log
+script> fi
+script>  
+script> echo PNULib= $FLOWRIANLIBRARY/PNULib/ISim/PNULib >> LEA_16Counter_tb.init
+script> echo work=./work >> LEA_16Counter_tb.init
+script> echo verilog work LEA_16Counter.v >> LEA_16Counter_tb.prj
+script> echo verilog work LEA_16Counter_tb.v >> LEA_16Counter_tb.prj
+script> echo vcd dumpfile LEA_16Counter_tb.vcd >> LEA_16Counter_tb.tcl
+script> echo vcd dumpvars -m /LEA_16Counter_tb -l 1 >> LEA_16Counter_tb.tcl
+script> echo run 10000 ns >> LEA_16Counter_tb.tcl
+script> echo vcd dumpflush >> LEA_16Counter_tb.tcl
+INFO:Simulator:908 - Using init file passed via -initfile option
+   "LEA_16Counter_tb.init"
+Running: /opt/Xilinx/14.1/ISE_DS/ISE/bin/lin/unwrapped/fuse -top work.LEA_16Counter_tb -init LEA_16Counter_tb.init -prj LEA_16Counter_tb.prj -lib PNULib -o LEA_16Counter_tb.exe
+ISim P.15xf (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8
+Determining compilation order of HDL files
+Analyzing Verilog file "LEA_16Counter.v" into library work
+Analyzing Verilog file "LEA_16Counter_tb.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "LEA_16Counter_tb.v" Line 10: Size mismatch in connection of port <count>. Formal port size is 4-bit while actual signal size is 16-bit.
+Completed static elaboration
+Fuse Memory Usage: 36132 KB
+Fuse CPU Usage: 1870 ms
+Compiling module LEA_16Counter
+Compiling module LEA_16Counter_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 2 Verilog Units
+Built simulation executable LEA_16Counter_tb.exe
+Fuse Memory Usage: 80192 KB
+Fuse CPU Usage: 1890 ms
+GCC CPU Usage: 250 ms
+script> echo quit -f >> LEA_16Counter_tb.tcl
+ISim P.15xf (signature 0x8ddf5b5d)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "/usr/share/flowrian/user/c0np4nn4/20191222150122_SimulateISim_c0np4nn4_LEA_16Counter_tb/LEA_16Counter_tb.v" Line 4.  For instance LEA_16Counter_tb/U0/, width 4 of formal port count is not equal to width 16 of actual signal count.
+Time resolution is 1 ps
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+script> fuse -top work.LEA_16Counter_tb -init LEA_16Counter_tb.init -prj LEA_16Counter_tb.prj  -lib PNULib -o LEA_16Counter_tb.exe
+script> ./LEA_16Counter_tb.exe -tclbatch LEA_16Counter_tb.tcl
+script> rm LEA_16Counter_tb.tcl
+script> rm LEA_16Counter_tb.init
+script> rm LEA_16Counter_tb.prj
+script> rm fuse.xmsgs
+script> rm fuseRelaunch.cmd
+script> rm isim.wdb
+script> rm -f LEA_16Counter_tb.exe fuse.log isim.log
+rm: cannot remove `list': No such file or directory
+rm: cannot remove `of': No such file or directory
+rm: cannot remove `verilog': No such file or directory
+rm: cannot remove `or': No such file or directory
+rm: cannot remove `VHDL': No such file or directory
+rm: cannot remove `files': No such file or directory
+script> rm -rf isim
+script> rm list of verilog or VHDL files
+script> rm -rf ./work
+script> rm -rf PNU_AND2.v
+script> rm -rf PNU_AND3.v
+script> rm -rf PNU_AND4.v
+script> rm -rf PNU_AND8.v
+script> rm -rf PNU_BUF.v
+script> rm -rf PNU_DFF.v
+script> rm -rf PNU_DFF_Ce.v
+script> rm -rf PNU_JKFF.v
+script> rm -rf PNU_MUX2.v
+script> rm -rf PNU_MUX4.v
+script> rm -rf PNU_MUX8.v
+script> rm -rf PNU_NAND2.v
+script> rm -rf PNU_NAND3.v
+script> rm -rf PNU_NAND4.v
+script> rm -rf PNU_NAND8.v
+script> rm -rf PNU_NOR2.v
+script> rm -rf PNU_NOR3.v
+script> rm -rf PNU_NOR4.v
+script> rm -rf PNU_NOR8.v
+script> rm -rf PNU_NOT.v
+script> rm -rf PNU_ONE.v
+script> rm -rf PNU_OR2.v
+script> rm -rf PNU_OR3.v
+script> rm -rf PNU_OR4.v
+script> rm -rf PNU_OR8.v
+script> rm -rf PNU_SRAM.v
+script> rm -rf PNU_TBUF.v
+script> rm -rf PNU_XNOR2.v
+script> rm -rf PNU_XNOR3.v
+script> rm -rf PNU_XNOR4.v
+script> rm -rf PNU_XOR2.v
+script> rm -rf PNU_XOR3.v
+script> rm -rf PNU_XOR4.v
+script> rm -rf PNU_ZERO.v
+script> rm -rf LEA_32bitBlock.v
+script> rm -rf LEA_128bitMessageRegister.v
+script> rm -rf LEA_BlockXOR.v
+script> rm -rf LEA_TwoAdder.v
+script> rm -rf LEA_FullAdder.v
+script> rm -rf LEA_FinAdder.v
+script> rm -rf LEA_TwoAdder_tb.v
+script> rm -rf LEA_FullAdder_tb.v
+script> rm -rf LEA_PASS.v
+script> rm -rf LEA_ROL9.v
+script> rm -rf LEA_ROR3.v
+script> rm -rf LEA_ROR5.v
+script> rm -rf LEA_BlockXOR_tb.v
+script> rm -rf LEA_Encrypt.v
+script> rm -rf LEA_Encrypt_tb.v
+script> rm -rf LEA_BlockAddition.v
+script> rm -rf LEA_128BitsDivideIn16x8Register.v
+script> rm -rf LEA_128BitsDivideIn16x8Register_tb.v
+script> rm -rf LEA_16Counter.v
+Finish simulation!!

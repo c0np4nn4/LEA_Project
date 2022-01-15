@@ -1,0 +1,176 @@
+if [ -f   /opt/Xilinx/14.1/ISE_DS/settings32.sh ]; then 
+ source /opt/Xilinx/14.1/ISE_DS/settings32.sh >> /tmp/log 
+fi
+if [ -f   /opt/Xilinx/14.1/ISE_DS/settings64.sh ]; then
+ source /opt/Xilinx/14.1/ISE_DS/settings64.sh >> /tmp/log
+fi
+ 
+echo PNULib= $FLOWRIANLIBRARY/PNULib/ISim/PNULib >> LEA_project_tb.init
+echo work=./work >> LEA_project_tb.init
+echo verilog work PNU_DFF_Ce.v >> LEA_project_tb.prj
+echo verilog work PNU_OR2.v >> LEA_project_tb.prj
+echo verilog work PNU_AND2.v >> LEA_project_tb.prj
+echo verilog work PNU_XOR2.v >> LEA_project_tb.prj
+echo verilog work PNU_OR4.v >> LEA_project_tb.prj
+echo verilog work PNU_NOT.v >> LEA_project_tb.prj
+echo verilog work PNU_ONE.v >> LEA_project_tb.prj
+echo verilog work LEA_8bitRegister.v >> LEA_project_tb.prj
+echo verilog work PNU_ZERO.v >> LEA_project_tb.prj
+echo verilog work LEA_FinAdder.v >> LEA_project_tb.prj
+echo verilog work LEA_FullAdder.v >> LEA_project_tb.prj
+echo verilog work PNU_DFF.v >> LEA_project_tb.prj
+echo verilog work DecToBinConverter.v >> LEA_project_tb.prj
+echo verilog work LEA_ROL3.v >> LEA_project_tb.prj
+echo verilog work LEA_ROL5.v >> LEA_project_tb.prj
+echo verilog work LEA_BlockSubtractor.v >> LEA_project_tb.prj
+echo verilog work LEA_ROR9.v >> LEA_project_tb.prj
+echo verilog work LEA_32bitBlock.v >> LEA_project_tb.prj
+echo verilog work LEA_KeyConstant.v >> LEA_project_tb.prj
+echo verilog work LEA_PASS.v >> LEA_project_tb.prj
+echo verilog work LEA_ROR3.v >> LEA_project_tb.prj
+echo verilog work LEA_ROR5.v >> LEA_project_tb.prj
+echo verilog work LEA_ROL9.v >> LEA_project_tb.prj
+echo verilog work LEA_BlockAddition.v >> LEA_project_tb.prj
+echo verilog work LEA_BlockXOR.v >> LEA_project_tb.prj
+echo verilog work LEA_CU.v >> LEA_project_tb.prj
+echo verilog work LTP.v >> LEA_project_tb.prj
+echo verilog work keypad.v >> LEA_project_tb.prj
+echo verilog work LEA_MergeTo128.v >> LEA_project_tb.prj
+echo verilog work LCD_InputKey.v >> LEA_project_tb.prj
+echo verilog work LCD_ShowSelected.v >> LEA_project_tb.prj
+echo verilog work LCD_ShowEncrypted.v >> LEA_project_tb.prj
+echo verilog work LCD_ShowDecrypted.v >> LEA_project_tb.prj
+echo verilog work PNU_MUX8.v >> LEA_project_tb.prj
+echo verilog work LCD_HOME.v >> LEA_project_tb.prj
+echo verilog work LCD_InputPlainText.v >> LEA_project_tb.prj
+echo verilog work LEA_Decrypt.v >> LEA_project_tb.prj
+echo verilog work LEA_128bitMessageRegister.v >> LEA_project_tb.prj
+echo verilog work LEA_KeyConstructor.v >> LEA_project_tb.prj
+echo verilog work LEA_128BitsDivideIn16x8Register.v >> LEA_project_tb.prj
+echo verilog work LEA_Encrypt.v >> LEA_project_tb.prj
+echo verilog work EightBitX16Reg.v >> LEA_project_tb.prj
+echo verilog work LEA_project.v >> LEA_project_tb.prj
+echo verilog work LEA_project_tb.v >> LEA_project_tb.prj
+echo vcd dumpfile LEA_project_tb.vcd >> LEA_project_tb.tcl
+echo vcd dumpvars -m /LEA_project_tb -l 1 >> LEA_project_tb.tcl
+echo run 20000 ns >> LEA_project_tb.tcl
+echo vcd dumpflush >> LEA_project_tb.tcl
+echo quit -f >> LEA_project_tb.tcl
+fuse -top work.LEA_project_tb -init LEA_project_tb.init -prj LEA_project_tb.prj  -lib PNULib -o LEA_project_tb.exe
+./LEA_project_tb.exe -tclbatch LEA_project_tb.tcl
+rm LEA_project_tb.tcl
+rm LEA_project_tb.init
+rm LEA_project_tb.prj
+rm fuse.xmsgs
+rm fuseRelaunch.cmd
+rm isim.wdb
+rm -f LEA_project_tb.exe fuse.log isim.log
+rm -rf isim
+rm list of verilog or VHDL files
+rm -rf ./work
+rm -rf PNU_AND2.v
+rm -rf PNU_AND3.v
+rm -rf PNU_AND4.v
+rm -rf PNU_AND8.v
+rm -rf PNU_BUF.v
+rm -rf PNU_DFF.v
+rm -rf PNU_DFF_Ce.v
+rm -rf PNU_JKFF.v
+rm -rf PNU_MUX2.v
+rm -rf PNU_MUX4.v
+rm -rf PNU_MUX8.v
+rm -rf PNU_NAND2.v
+rm -rf PNU_NAND3.v
+rm -rf PNU_NAND4.v
+rm -rf PNU_NAND8.v
+rm -rf PNU_NOR2.v
+rm -rf PNU_NOR3.v
+rm -rf PNU_NOR4.v
+rm -rf PNU_NOR8.v
+rm -rf PNU_NOT.v
+rm -rf PNU_ONE.v
+rm -rf PNU_OR2.v
+rm -rf PNU_OR3.v
+rm -rf PNU_OR4.v
+rm -rf PNU_OR8.v
+rm -rf PNU_SRAM.v
+rm -rf PNU_TBUF.v
+rm -rf PNU_XNOR2.v
+rm -rf PNU_XNOR3.v
+rm -rf PNU_XNOR4.v
+rm -rf PNU_XOR2.v
+rm -rf PNU_XOR3.v
+rm -rf PNU_XOR4.v
+rm -rf PNU_ZERO.v
+rm -rf DecToBinConverter.v
+rm -rf EightBitX16Reg.v
+rm -rf LCDtest1.v
+rm -rf LEA_8bitRegister.v
+rm -rf testLCD.v
+rm -rf DecToLCDinputBit.v
+rm -rf LCDtest2.v
+rm -rf LTP.v
+rm -rf keypad.v
+rm -rf keypad_tb.v
+rm -rf LEA_MergeTo128.v
+rm -rf Untitled0_tb.v
+rm -rf Untitled0.v
+rm -rf Subtest_tb.v
+rm -rf Subtest.v
+rm -rf shifter_8bit.v
+rm -rf LEA_TwoAdder_tb.v
+rm -rf LEA_TwoAdder.v
+rm -rf LEA_test_tb.v
+rm -rf LEA_test.v
+rm -rf LEA_ROR9.v
+rm -rf LEA_ROR5_tb.v
+rm -rf LEA_ROR5.v
+rm -rf LEA_ROR3.v
+rm -rf LEA_ROL11.v
+rm -rf LEA_ROL9_tb.v
+rm -rf LEA_ROL9.v
+rm -rf LEA_ROL6.v
+rm -rf LEA_ROL5.v
+rm -rf LEA_ROL3.v
+rm -rf LEA_ROL1.v
+rm -rf LEA_PASS.v
+rm -rf LEA_KeyConstructor.v
+rm -rf LEA_KeyConstant_tb.v
+rm -rf LEA_KeyConstant.v
+rm -rf LEA_FullSub.v
+rm -rf LEA_FullAdder_tb.v
+rm -rf LEA_FullAdder.v
+rm -rf LEA_FinSub.v
+rm -rf LEA_FinAdder.v
+rm -rf LEA_Encrypt_tb.v
+rm -rf LEA_Decrypt_tb.v
+rm -rf LEA_Decrypt.v
+rm -rf LEA_BlockXOR_tb.v
+rm -rf LEA_BlockXOR.v
+rm -rf LEA_BlockSubtractor_tb.v
+rm -rf LEA_128BitsDivideIn16x8Register_tb.v
+rm -rf LEA_128BitsDivideIn16x8Register.v
+rm -rf LEA_128bitMessageRegister.v
+rm -rf LEA_32bitBlock.v
+rm -rf LEA_16Counter_tb.v
+rm -rf LEA_16Counter.v
+rm -rf LCD_ShowSelected.v
+rm -rf LCD_ShowEncrypted.v
+rm -rf LCD_ShowDecrypted.v
+rm -rf LCD_InputPlainText.v
+rm -rf LCD_InputKey.v
+rm -rf LCD_HOME.v
+rm -rf CounterEX.v
+rm -rf LEA_CU.v
+rm -rf LEA_CU_tb.v
+rm -rf LEA_EncDecEXAMPLE.v
+rm -rf LEA_EncDecEXAMPLE_tb.v
+rm -rf LEA_BlockAddition.v
+rm -rf LEA_Encrypt.v
+rm -rf LEA_BlockSubtractor.v
+rm -rf LEA_project.v
+rm -rf LEA_project_tb.v
+rm -rf EightBitX16Reg_tb.v
+rm -rf LCDTEST.v
+rm -rf LCDTEST_tb.v
+echo Finish simulation!!

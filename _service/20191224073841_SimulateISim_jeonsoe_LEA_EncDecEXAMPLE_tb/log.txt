@@ -1,0 +1,229 @@
+script> if [ -f   /opt/Xilinx/14.1/ISE_DS/settings32.sh ]; then 
+script>  source /opt/Xilinx/14.1/ISE_DS/settings32.sh >> /tmp/log 
+script> fi
+script> if [ -f   /opt/Xilinx/14.1/ISE_DS/settings64.sh ]; then
+script>  source /opt/Xilinx/14.1/ISE_DS/settings64.sh >> /tmp/log
+script> fi
+script>  
+script> echo PNULib= $FLOWRIANLIBRARY/PNULib/ISim/PNULib >> LEA_EncDecEXAMPLE_tb.init
+script> echo work=./work >> LEA_EncDecEXAMPLE_tb.init
+script> echo verilog work PNU_OR2.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work PNU_AND2.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work PNU_XOR2.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work PNU_MUX2.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work PNU_ONE.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work PNU_NOT.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work PNU_ZERO.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_FinAdder.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_FullAdder.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_ROL3.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_ROL5.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_BlockSubtractor.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_ROR9.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_PASS.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_ROR3.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_ROR5.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_ROL9.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_BlockAddition.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_BlockXOR.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_Decrypt.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_Encrypt.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_EncDecEXAMPLE.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo verilog work LEA_EncDecEXAMPLE_tb.v >> LEA_EncDecEXAMPLE_tb.prj
+script> echo vcd dumpfile LEA_EncDecEXAMPLE_tb.vcd >> LEA_EncDecEXAMPLE_tb.tcl
+script> echo vcd dumpvars -m /LEA_EncDecEXAMPLE_tb -l 1 >> LEA_EncDecEXAMPLE_tb.tcl
+script> echo run 10000 ns >> LEA_EncDecEXAMPLE_tb.tcl
+script> echo vcd dumpflush >> LEA_EncDecEXAMPLE_tb.tcl
+INFO:Simulator:908 - Using init file passed via -initfile option
+   "LEA_EncDecEXAMPLE_tb.init"
+Running: /opt/Xilinx/14.1/ISE_DS/ISE/bin/lin/unwrapped/fuse -top work.LEA_EncDecEXAMPLE_tb -init LEA_EncDecEXAMPLE_tb.init -prj LEA_EncDecEXAMPLE_tb.prj -lib PNULib -o LEA_EncDecEXAMPLE_tb.exe
+ISim P.15xf (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8
+Determining compilation order of HDL files
+Analyzing Verilog file "PNU_OR2.v" into library work
+Analyzing Verilog file "PNU_AND2.v" into library work
+Analyzing Verilog file "PNU_XOR2.v" into library work
+Analyzing Verilog file "PNU_MUX2.v" into library work
+Analyzing Verilog file "PNU_ONE.v" into library work
+Analyzing Verilog file "PNU_NOT.v" into library work
+Analyzing Verilog file "PNU_ZERO.v" into library work
+Analyzing Verilog file "LEA_FinAdder.v" into library work
+Analyzing Verilog file "LEA_FullAdder.v" into library work
+Analyzing Verilog file "LEA_ROL3.v" into library work
+Analyzing Verilog file "LEA_ROL5.v" into library work
+Analyzing Verilog file "LEA_BlockSubtractor.v" into library work
+Analyzing Verilog file "LEA_ROR9.v" into library work
+Analyzing Verilog file "LEA_PASS.v" into library work
+Analyzing Verilog file "LEA_ROR3.v" into library work
+Analyzing Verilog file "LEA_ROR5.v" into library work
+Analyzing Verilog file "LEA_ROL9.v" into library work
+Analyzing Verilog file "LEA_BlockAddition.v" into library work
+Analyzing Verilog file "LEA_BlockXOR.v" into library work
+Analyzing Verilog file "LEA_Decrypt.v" into library work
+Analyzing Verilog file "LEA_Encrypt.v" into library work
+Analyzing Verilog file "LEA_EncDecEXAMPLE.v" into library work
+Analyzing Verilog file "LEA_EncDecEXAMPLE_tb.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 36524 KB
+Fuse CPU Usage: 1730 ms
+Compiling module PNU_XOR2
+Compiling module LEA_BlockXOR
+Compiling module PNU_AND2
+Compiling module PNU_OR2
+Compiling module LEA_FullAdder
+Compiling module LEA_FinAdder
+Compiling module PNU_ZERO
+Compiling module LEA_BlockAddition
+Compiling module LEA_ROL9
+Compiling module LEA_ROR5
+Compiling module LEA_ROR3
+Compiling module LEA_PASS
+Compiling module LEA_Encrypt
+Compiling module LEA_ROR9
+Compiling module PNU_NOT
+Compiling module PNU_ONE
+Compiling module PNU_MUX2
+Compiling module LEA_BlockSubtractor
+Compiling module LEA_ROL5
+Compiling module LEA_ROL3
+Compiling module LEA_Decrypt
+Compiling module LEA_EncDecEXAMPLE
+Compiling module LEA_EncDecEXAMPLE_tb
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 23 Verilog Units
+Built simulation executable LEA_EncDecEXAMPLE_tb.exe
+Fuse Memory Usage: 81248 KB
+Fuse CPU Usage: 1960 ms
+GCC CPU Usage: 3470 ms
+script> echo quit -f >> LEA_EncDecEXAMPLE_tb.tcl
+ISim P.15xf (signature 0x8ddf5b5d)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+script> fuse -top work.LEA_EncDecEXAMPLE_tb -init LEA_EncDecEXAMPLE_tb.init -prj LEA_EncDecEXAMPLE_tb.prj  -lib PNULib -o LEA_EncDecEXAMPLE_tb.exe
+script> ./LEA_EncDecEXAMPLE_tb.exe -tclbatch LEA_EncDecEXAMPLE_tb.tcl
+script> rm LEA_EncDecEXAMPLE_tb.tcl
+script> rm LEA_EncDecEXAMPLE_tb.init
+script> rm LEA_EncDecEXAMPLE_tb.prj
+script> rm fuse.xmsgs
+script> rm fuseRelaunch.cmd
+script> rm isim.wdb
+script> rm -f LEA_EncDecEXAMPLE_tb.exe fuse.log isim.log
+rm: cannot remove `list': No such file or directory
+rm: cannot remove `of': No such file or directory
+rm: cannot remove `verilog': No such file or directory
+rm: cannot remove `or': No such file or directory
+rm: cannot remove `VHDL': No such file or directory
+rm: cannot remove `files': No such file or directory
+script> rm -rf isim
+script> rm list of verilog or VHDL files
+script> rm -rf ./work
+script> rm -rf PNU_AND2.v
+script> rm -rf PNU_AND3.v
+script> rm -rf PNU_AND4.v
+script> rm -rf PNU_AND8.v
+script> rm -rf PNU_BUF.v
+script> rm -rf PNU_DFF.v
+script> rm -rf PNU_DFF_Ce.v
+script> rm -rf PNU_JKFF.v
+script> rm -rf PNU_MUX2.v
+script> rm -rf PNU_MUX4.v
+script> rm -rf PNU_MUX8.v
+script> rm -rf PNU_NAND2.v
+script> rm -rf PNU_NAND3.v
+script> rm -rf PNU_NAND4.v
+script> rm -rf PNU_NAND8.v
+script> rm -rf PNU_NOR2.v
+script> rm -rf PNU_NOR3.v
+script> rm -rf PNU_NOR4.v
+script> rm -rf PNU_NOR8.v
+script> rm -rf PNU_NOT.v
+script> rm -rf PNU_ONE.v
+script> rm -rf PNU_OR2.v
+script> rm -rf PNU_OR3.v
+script> rm -rf PNU_OR4.v
+script> rm -rf PNU_OR8.v
+script> rm -rf PNU_SRAM.v
+script> rm -rf PNU_TBUF.v
+script> rm -rf PNU_XNOR2.v
+script> rm -rf PNU_XNOR3.v
+script> rm -rf PNU_XNOR4.v
+script> rm -rf PNU_XOR2.v
+script> rm -rf PNU_XOR3.v
+script> rm -rf PNU_XOR4.v
+script> rm -rf PNU_ZERO.v
+script> rm -rf DecToBinConverter.v
+script> rm -rf EightBitX16Reg.v
+script> rm -rf LCDtest1.v
+script> rm -rf LEA_8bitRegister.v
+script> rm -rf testLCD.v
+script> rm -rf DecToLCDinputBit.v
+script> rm -rf LCDtest2.v
+script> rm -rf LTP.v
+script> rm -rf keypad.v
+script> rm -rf keypad_tb.v
+script> rm -rf LEA_MergeTo128.v
+script> rm -rf Untitled0_tb.v
+script> rm -rf Untitled0.v
+script> rm -rf Subtest_tb.v
+script> rm -rf Subtest.v
+script> rm -rf shifter_8bit.v
+script> rm -rf LEA_TwoAdder_tb.v
+script> rm -rf LEA_TwoAdder.v
+script> rm -rf LEA_test_tb.v
+script> rm -rf LEA_test.v
+script> rm -rf LEA_ROR9.v
+script> rm -rf LEA_ROR5_tb.v
+script> rm -rf LEA_ROR5.v
+script> rm -rf LEA_ROR3.v
+script> rm -rf LEA_ROL11.v
+script> rm -rf LEA_ROL9_tb.v
+script> rm -rf LEA_ROL9.v
+script> rm -rf LEA_ROL6.v
+script> rm -rf LEA_ROL5.v
+script> rm -rf LEA_ROL3.v
+script> rm -rf LEA_ROL1.v
+script> rm -rf LEA_PASS.v
+script> rm -rf LEA_KeyConstructor.v
+script> rm -rf LEA_KeyConstant_tb.v
+script> rm -rf LEA_KeyConstant.v
+script> rm -rf LEA_FullSub.v
+script> rm -rf LEA_FullAdder_tb.v
+script> rm -rf LEA_FullAdder.v
+script> rm -rf LEA_FinSub.v
+script> rm -rf LEA_FinAdder.v
+script> rm -rf LEA_Encrypt_tb.v
+script> rm -rf LEA_Decrypt_tb.v
+script> rm -rf LEA_Decrypt.v
+script> rm -rf LEA_BlockXOR_tb.v
+script> rm -rf LEA_BlockXOR.v
+script> rm -rf LEA_BlockSubtractor_tb.v
+script> rm -rf LEA_128BitsDivideIn16x8Register_tb.v
+script> rm -rf LEA_128BitsDivideIn16x8Register.v
+script> rm -rf LEA_128bitMessageRegister.v
+script> rm -rf LEA_32bitBlock.v
+script> rm -rf LEA_16Counter_tb.v
+script> rm -rf LEA_16Counter.v
+script> rm -rf LCD_ShowSelected.v
+script> rm -rf LCD_ShowEncrypted.v
+script> rm -rf LCD_ShowDecrypted.v
+script> rm -rf LCD_InputPlainText.v
+script> rm -rf LCD_InputKey.v
+script> rm -rf LCD_HOME.v
+script> rm -rf CounterEX.v
+script> rm -rf LEA_project.v
+script> rm -rf LEA_CU.v
+script> rm -rf LEA_project_tb.v
+script> rm -rf LEA_CU_tb.v
+script> rm -rf LEA_EncDecEXAMPLE.v
+script> rm -rf LEA_EncDecEXAMPLE_tb.v
+script> rm -rf LEA_BlockAddition.v
+script> rm -rf LEA_Encrypt.v
+Finish simulation!!

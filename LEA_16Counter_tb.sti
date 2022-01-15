@@ -1,0 +1,98 @@
+StimulianSaveFile
+LanguageType Verilog
+tbModuleName LEA_16Counter_tb
+ModuleName LEA_16Counter
+TimeUnit ns
+TotalTime 10000
+GridInterval 100
+Parameters
+End
+Port
+-1 e 1 Binary clk singlebit in 0 0 PortEnd 0
+-1 "( 1 Binary rst singlebit in 0 0 PortEnd 0
+0 f 0 Binary count multibit out 15 0 Children v [15] w [14] x [13] y [12] z [11] { [10] | [9] } [8] ~ [7] "! [6] "" [5] "# [4] "$ [3] "% [2] "& [1] "' [0] ChildrenEnd PortEnd 0
+End
+pixelTimeRatio 5
+HorzZoomOutScale 80
+WavesHorzScrollBarMax 196602
+WavesHorzScrollBarPosition 0
+WavesHorzScrollBarEnabled -1
+DefaultVertInterval 32
+UnScaledDefaultVertInterval 16
+UnScaledDefaultVertSignalHeight 10
+WavesVertScrollBarMax 100
+WavesVertScrollBarPosition 0
+WavesVertScrollBarEnabled 0
+Vars
+se
+t0
+0 200 50 0
+100 200 50 1
+sv
+t0
+0 0 1 0
+sw
+t0
+0 0 1 0
+sx
+t0
+0 0 1 0
+sy
+t0
+0 0 1 0
+sz
+t0
+0 0 1 0
+s{
+t0
+0 0 1 0
+s|
+t0
+0 0 1 0
+s}
+t0
+0 0 1 0
+s~
+t0
+0 0 1 0
+s"!
+t0
+0 0 1 0
+s""
+t0
+0 0 1 0
+s"#
+t0
+0 0 1 0
+s"$
+t0
+0 0 1 0
+s"%
+t0
+0 0 1 0
+s"&
+t0
+0 0 1 0
+s"'
+t0
+0 0 1 0
+s"(
+t0
+0 0 1 0
+300 500 2 0
+400 0 1 1
+End
+Cursors
+800
+End
+ActiveCursorIndex 0
+versionCode
+20070511
+psrFileName
+C:\Flowrian\_analyze\LEA_16Counter.psr
+systemCExportSimulationTime
+10000
+systemCExportSimulationTimeUnit
+10000
+systemCProbes
+End

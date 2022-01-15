@@ -1,0 +1,70 @@
+$date
+   Sun Dec 22 13:53:10 2019
+$end
+$version
+  P.15xf
+$end
+$timescale
+  1ps
+$end
+$scope module LEA_FullAdder_tb $end
+$var wire 1 ! Cout $end
+$var wire 1 " S $end
+$var reg 1 # A $end
+$var reg 1 $ B $end
+$var reg 1 % Cin $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0#
+0$
+0%
+0!
+0"
+$end
+#700000
+1#
+1"
+#800000
+0#
+1$
+#900000
+0$
+0"
+#1000000
+1#
+1$
+1%
+1!
+1"
+#1100000
+0#
+0$
+0%
+0!
+0"
+#1600000
+1#
+1%
+1!
+0"
+#1700000
+0#
+0%
+0!
+0"
+#2100000
+1$
+1%
+1!
+#2200000
+0$
+0%
+0!
+#2600000
+1%
+1"
+#2700000
+0%
+0"

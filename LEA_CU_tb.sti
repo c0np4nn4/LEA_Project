@@ -1,0 +1,93 @@
+StimulianSaveFile
+LanguageType Verilog
+tbModuleName LEA_CU_tb
+ModuleName LEA_CU
+TimeUnit ns
+TotalTime 10000
+GridInterval 100
+Parameters
+DecryptSuccess 6 integer 7 0
+EncryptionSuccess 3 integer 7 0
+InputKey 2 integer 7 0
+InputKey_decrypt 5 integer 7 0
+InputPlainText 1 integer 7 0
+ShowEncryptedText 4 integer 7 0
+Start 0 integer 7 0
+End
+Port
+-1 ) 1 Binary clk singlebit in 0 0 PortEnd 0
+-1 * 1 Binary rst singlebit in 0 0 PortEnd 0
+-1 + 1 Binary sharp singlebit in 0 0 PortEnd 0
+-1 - 1 Binary star singlebit in 0 0 PortEnd 0
+0 ! 0 Binary LCD_addr multibit out 2 0 Children $ [2] % [1] & [0] ChildrenEnd PortEnd 0
+0 ' 1 Binary chk_key singlebit out 0 0 PortEnd 0
+0 ( 1 Binary chk_text singlebit out 0 0 PortEnd 0
+0 , 1 Binary sharp_out singlebit out 0 0 PortEnd 0
+0 . 1 Binary star_out singlebit out 0 0 PortEnd 0
+End
+pixelTimeRatio 5
+HorzZoomOutScale 20
+WavesHorzScrollBarMax 2162622
+WavesHorzScrollBarPosition 430076
+WavesHorzScrollBarEnabled -1
+DefaultVertInterval 32
+UnScaledDefaultVertInterval 16
+UnScaledDefaultVertSignalHeight 10
+WavesVertScrollBarMax 100
+WavesVertScrollBarPosition 0
+WavesVertScrollBarEnabled 0
+Vars
+s$
+t0
+0 0 1 0
+s%
+t0
+0 0 1 0
+s&
+t0
+0 0 1 0
+s'
+t0
+0 0 1 0
+s(
+t0
+0 0 1 0
+s)
+t0
+0 100 100 0
+50 100 100 1
+s*
+t0
+0 0 1 1
+200 0 1 0
+s+
+t0
+0 1600 2 0
+1500 300 4 1
+1900 300 3 0
+s,
+t0
+0 0 1 0
+s-
+t0
+0 400 2 0
+300 300 4 1
+700 300 3 0
+s.
+t0
+0 0 1 0
+End
+Cursors
+2500
+End
+ActiveCursorIndex 0
+versionCode
+20070511
+psrFileName
+C:\Flowrian\_analyze\LEA_CU.psr
+systemCExportSimulationTime
+10000
+systemCExportSimulationTimeUnit
+10000
+systemCProbes
+End

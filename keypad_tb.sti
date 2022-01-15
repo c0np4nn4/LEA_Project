@@ -1,0 +1,127 @@
+StimulianSaveFile
+LanguageType Verilog
+tbModuleName keypad_tb
+ModuleName keypad
+TimeUnit ns
+TotalTime 10000
+GridInterval 100
+Parameters
+End
+Port
+-1 " 1 Binary CLK singlebit in 0 0 PortEnd 0
+-1 # 0 Binary Keypad multibit in 11 0 Children / [11] 0 [10] 1 [9] 2 [8] 3 [7] 4 [6] 5 [5] 6 [4] 7 [3] 8 [2] 9 [1] : [0] ChildrenEnd PortEnd 0
+-1 K 1 Binary RST singlebit in 0 0 PortEnd 0
+0 ! 1 Binary CHK singlebit out 0 0 PortEnd 0
+0 ; 0 Binary LCD_DATA multibit out 7 0 Children C [7] D [6] E [5] F [4] G [3] H [2] I [1] J [0] ChildrenEnd PortEnd 0
+0 L 1 Binary sharp singlebit out 0 0 PortEnd 0
+0 M 1 Binary star singlebit out 0 0 PortEnd 0
+End
+pixelTimeRatio 5
+HorzZoomOutScale 80
+WavesHorzScrollBarMax 196602
+WavesHorzScrollBarPosition 0
+WavesHorzScrollBarEnabled -1
+DefaultVertInterval 32
+UnScaledDefaultVertInterval 16
+UnScaledDefaultVertSignalHeight 10
+WavesVertScrollBarMax 100
+WavesVertScrollBarPosition 0
+WavesVertScrollBarEnabled 0
+Vars
+s!
+t0
+0 0 1 0
+s"
+t0
+0 200 50 0
+100 200 50 1
+s/
+t0
+0 6700 2 0
+5900 0 1 1
+s0
+t0
+0 5600 2 0
+4600 0 1 1
+s1
+t0
+0 0 1 0
+s2
+t0
+0 0 1 0
+s3
+t0
+0 4100 2 0
+3100 0 1 1
+s4
+t0
+0 0 1 0
+s5
+t0
+0 0 1 0
+s6
+t0
+0 0 1 0
+s7
+t0
+0 2600 2 0
+1700 0 1 1
+s8
+t0
+0 0 1 0
+s9
+t0
+0 1400 2 0
+300 0 1 1
+s:
+t0
+0 0 1 0
+sC
+t0
+0 0 1 0
+sD
+t0
+0 0 1 0
+sE
+t0
+0 0 1 0
+sF
+t0
+0 0 1 0
+sG
+t0
+0 0 1 0
+sH
+t0
+0 0 1 0
+sI
+t0
+0 0 1 0
+sJ
+t0
+0 0 1 0
+sK
+t0
+0 0 1 1
+200 0 1 0
+sL
+t0
+0 0 1 0
+sM
+t0
+0 0 1 0
+End
+Cursors
+6700
+End
+ActiveCursorIndex 0
+versionCode
+20070511
+psrFileName
+C:\Flowrian\_analyze\keypad.psr
+systemCExportSimulationTime
+10000
+systemCExportSimulationTimeUnit
+10000
+systemCProbes
+End

@@ -1,0 +1,120 @@
+script> if [ -f   /opt/Xilinx/14.1/ISE_DS/settings32.sh ]; then 
+script>  source /opt/Xilinx/14.1/ISE_DS/settings32.sh >> /tmp/log 
+script> fi
+script> if [ -f   /opt/Xilinx/14.1/ISE_DS/settings64.sh ]; then
+script>  source /opt/Xilinx/14.1/ISE_DS/settings64.sh >> /tmp/log
+script> fi
+script>  
+script> echo PNULib= $FLOWRIANLIBRARY/PNULib/ISim/PNULib >> LEA_project_tb.init
+script> echo work=./work >> LEA_project_tb.init
+script> echo verilog work PNU_NOT.v >> LEA_project_tb.prj
+script> echo verilog work PNU_AND2.v >> LEA_project_tb.prj
+script> echo verilog work PNU_DFF.v >> LEA_project_tb.prj
+script> echo verilog work PNU_OR4.v >> LEA_project_tb.prj
+script> echo verilog work PNU_OR2.v >> LEA_project_tb.prj
+script> echo verilog work PNU_DFF_Ce.v >> LEA_project_tb.prj
+script> echo verilog work LTP.v >> LEA_project_tb.prj
+script> echo verilog work PNU_ONE.v >> LEA_project_tb.prj
+script> echo verilog work PNU_ZERO.v >> LEA_project_tb.prj
+script> echo verilog work DecToBinConverter.v >> LEA_project_tb.prj
+script> echo verilog work LEA_8bitRegister.v >> LEA_project_tb.prj
+script> echo verilog work LEA_MergeTo128.v >> LEA_project_tb.prj
+script> echo verilog work keypad.v >> LEA_project_tb.prj
+script> echo verilog work PNU_MUX8.v >> LEA_project_tb.prj
+script> echo verilog work EightBitX16Reg.v >> LEA_project_tb.prj
+script> echo verilog work LEA_project.v >> LEA_project_tb.prj
+INFO:Simulator:908 - Using init file passed via -initfile option
+   "LEA_project_tb.init"
+Running: /opt/Xilinx/14.1/ISE_DS/ISE/bin/lin/unwrapped/fuse -top work.LEA_project_tb -init LEA_project_tb.init -prj LEA_project_tb.prj -lib PNULib -o LEA_project_tb.exe
+ISim P.15xf (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8
+Determining compilation order of HDL files
+Analyzing Verilog file "PNU_NOT.v" into library work
+Analyzing Verilog file "PNU_AND2.v" into library work
+Analyzing Verilog file "PNU_DFF.v" into library work
+Analyzing Verilog file "PNU_OR4.v" into library work
+Analyzing Verilog file "PNU_OR2.v" into library work
+Analyzing Verilog file "PNU_DFF_Ce.v" into library work
+Analyzing Verilog file "LTP.v" into library work
+Analyzing Verilog file "PNU_ONE.v" into library work
+Analyzing Verilog file "PNU_ZERO.v" into library work
+Analyzing Verilog file "DecToBinConverter.v" into library work
+Analyzing Verilog file "LEA_8bitRegister.v" into library work
+Analyzing Verilog file "LEA_MergeTo128.v" into library work
+Analyzing Verilog file "keypad.v" into library work
+Analyzing Verilog file "PNU_MUX8.v" into library work
+Analyzing Verilog file "EightBitX16Reg.v" into library work
+Analyzing Verilog file "LEA_project.v" into library work
+Analyzing Verilog file "LEA_project_tb.v" into library work
+Starting static elaboration
+ERROR:HDLCompiler:1654 - "LEA_project.v" Line 343: Instantiating <s0> from unknown module <LEA_Encrypt>
+ERROR:HDLCompiler:1654 - "LEA_project.v" Line 349: Instantiating <s2> from unknown module <LEA_128BitsDivideIn16x8Register>
+ERROR:HDLCompiler:1654 - "LEA_project.v" Line 369: Instantiating <s3> from unknown module <LEA_KeyConstructor>
+ERROR:HDLCompiler:1654 - "LEA_project.v" Line 375: Instantiating <s4> from unknown module <LEA_128bitMessageRegister>
+ERROR:HDLCompiler:1654 - "LEA_project.v" Line 383: Instantiating <s13> from unknown module <LEA_Decrypt>
+ERROR:HDLCompiler:1654 - "LEA_project.v" Line 423: Instantiating <s17> from unknown module <LCD_InputPlainText>
+ERROR:HDLCompiler:1654 - "LEA_project.v" Line 457: Instantiating <s19> from unknown module <LCD_HOME>
+ERROR:HDLCompiler:1654 - "LEA_project.v" Line 510: Instantiating <s22> from unknown module <LCD_ShowDecrypted>
+ERROR:HDLCompiler:1654 - "LEA_project.v" Line 544: Instantiating <s23> from unknown module <LCD_ShowEncrypted>
+ERROR:HDLCompiler:1654 - "LEA_project.v" Line 578: Instantiating <s24> from unknown module <LCD_ShowSelected>
+ERROR:HDLCompiler:1654 - "LEA_project.v" Line 762: Instantiating <s18> from unknown module <LCD_InputKey>
+ERROR:HDLCompiler:1654 - "LEA_project.v" Line 796: Instantiating <s35> from unknown module <LEA_CU>
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed
+script> echo verilog work LEA_project_tb.v >> LEA_project_tb.prj
+script> fuse -top work.LEA_project_tb -init LEA_project_tb.init -prj LEA_project_tb.prj  -lib PNULib -o LEA_project_tb.exe
+script> rm LEA_project_tb.init
+script> rm LEA_project_tb.prj
+script> rm fuse.xmsgs
+rm: cannot remove `LEA_project_tb.exe': No such file or directory
+script> rm fuseRelaunch.cmd
+script> rm LEA_project_tb.exe  fuse.log 
+script> rm -rf isim
+script> rm -rf ./work
+script> rm -rf PNU_AND2.v
+script> rm -rf PNU_AND3.v
+script> rm -rf PNU_AND4.v
+script> rm -rf PNU_AND8.v
+script> rm -rf PNU_BUF.v
+script> rm -rf PNU_DFF.v
+script> rm -rf PNU_DFF_Ce.v
+script> rm -rf PNU_JKFF.v
+script> rm -rf PNU_MUX2.v
+script> rm -rf PNU_MUX4.v
+script> rm -rf PNU_MUX8.v
+script> rm -rf PNU_NAND2.v
+script> rm -rf PNU_NAND3.v
+script> rm -rf PNU_NAND4.v
+script> rm -rf PNU_NAND8.v
+script> rm -rf PNU_NOR2.v
+script> rm -rf PNU_NOR3.v
+script> rm -rf PNU_NOR4.v
+script> rm -rf PNU_NOR8.v
+script> rm -rf PNU_NOT.v
+script> rm -rf PNU_ONE.v
+script> rm -rf PNU_OR2.v
+script> rm -rf PNU_OR3.v
+script> rm -rf PNU_OR4.v
+script> rm -rf PNU_OR8.v
+script> rm -rf PNU_SRAM.v
+script> rm -rf PNU_TBUF.v
+script> rm -rf PNU_XNOR2.v
+script> rm -rf PNU_XNOR3.v
+script> rm -rf PNU_XNOR4.v
+script> rm -rf PNU_XOR2.v
+script> rm -rf PNU_XOR3.v
+script> rm -rf PNU_XOR4.v
+script> rm -rf PNU_ZERO.v
+script> rm -rf DecToBinConverter.v
+script> rm -rf EightBitX16Reg.v
+script> rm -rf LCDtest1.v
+script> rm -rf LEA_8bitRegister.v
+script> rm -rf testLCD.v
+script> rm -rf DecToLCDinputBit.v
+script> rm -rf LCDtest2.v
+script> rm -rf LTP.v
+script> rm -rf keypad.v
+script> rm -rf keypad_tb.v
+script> rm -rf LEA_MergeTo128.v
+script> rm -rf LEA_project.v
+Finish compilation!!

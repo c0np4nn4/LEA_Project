@@ -1,0 +1,818 @@
+$date
+   Tue Dec 24 11:23:19 2019
+$end
+$version
+  P.15xf
+$end
+$timescale
+  1ps
+$end
+$scope module EightBitX16Reg_tb $end
+$var wire 1 ! Dout1 [7] $end
+$var wire 1 " Dout1 [6] $end
+$var wire 1 # Dout1 [5] $end
+$var wire 1 $ Dout1 [4] $end
+$var wire 1 % Dout1 [3] $end
+$var wire 1 & Dout1 [2] $end
+$var wire 1 ' Dout1 [1] $end
+$var wire 1 ( Dout1 [0] $end
+$var wire 1 ) Dout10 [7] $end
+$var wire 1 * Dout10 [6] $end
+$var wire 1 + Dout10 [5] $end
+$var wire 1 , Dout10 [4] $end
+$var wire 1 - Dout10 [3] $end
+$var wire 1 . Dout10 [2] $end
+$var wire 1 / Dout10 [1] $end
+$var wire 1 0 Dout10 [0] $end
+$var wire 1 1 Dout11 [7] $end
+$var wire 1 2 Dout11 [6] $end
+$var wire 1 3 Dout11 [5] $end
+$var wire 1 4 Dout11 [4] $end
+$var wire 1 5 Dout11 [3] $end
+$var wire 1 6 Dout11 [2] $end
+$var wire 1 7 Dout11 [1] $end
+$var wire 1 8 Dout11 [0] $end
+$var wire 1 9 Dout12 [7] $end
+$var wire 1 : Dout12 [6] $end
+$var wire 1 ; Dout12 [5] $end
+$var wire 1 < Dout12 [4] $end
+$var wire 1 = Dout12 [3] $end
+$var wire 1 > Dout12 [2] $end
+$var wire 1 ? Dout12 [1] $end
+$var wire 1 @ Dout12 [0] $end
+$var wire 1 A Dout13 [7] $end
+$var wire 1 B Dout13 [6] $end
+$var wire 1 C Dout13 [5] $end
+$var wire 1 D Dout13 [4] $end
+$var wire 1 E Dout13 [3] $end
+$var wire 1 F Dout13 [2] $end
+$var wire 1 G Dout13 [1] $end
+$var wire 1 H Dout13 [0] $end
+$var wire 1 I Dout14 [7] $end
+$var wire 1 J Dout14 [6] $end
+$var wire 1 K Dout14 [5] $end
+$var wire 1 L Dout14 [4] $end
+$var wire 1 M Dout14 [3] $end
+$var wire 1 N Dout14 [2] $end
+$var wire 1 O Dout14 [1] $end
+$var wire 1 P Dout14 [0] $end
+$var wire 1 Q Dout15 [7] $end
+$var wire 1 R Dout15 [6] $end
+$var wire 1 S Dout15 [5] $end
+$var wire 1 T Dout15 [4] $end
+$var wire 1 U Dout15 [3] $end
+$var wire 1 V Dout15 [2] $end
+$var wire 1 W Dout15 [1] $end
+$var wire 1 X Dout15 [0] $end
+$var wire 1 Y Dout16 [7] $end
+$var wire 1 Z Dout16 [6] $end
+$var wire 1 [ Dout16 [5] $end
+$var wire 1 \ Dout16 [4] $end
+$var wire 1 ] Dout16 [3] $end
+$var wire 1 ^ Dout16 [2] $end
+$var wire 1 _ Dout16 [1] $end
+$var wire 1 ` Dout16 [0] $end
+$var wire 1 a Dout2 [7] $end
+$var wire 1 b Dout2 [6] $end
+$var wire 1 c Dout2 [5] $end
+$var wire 1 d Dout2 [4] $end
+$var wire 1 e Dout2 [3] $end
+$var wire 1 f Dout2 [2] $end
+$var wire 1 g Dout2 [1] $end
+$var wire 1 h Dout2 [0] $end
+$var wire 1 i Dout3 [7] $end
+$var wire 1 j Dout3 [6] $end
+$var wire 1 k Dout3 [5] $end
+$var wire 1 l Dout3 [4] $end
+$var wire 1 m Dout3 [3] $end
+$var wire 1 n Dout3 [2] $end
+$var wire 1 o Dout3 [1] $end
+$var wire 1 p Dout3 [0] $end
+$var wire 1 q Dout4 [7] $end
+$var wire 1 r Dout4 [6] $end
+$var wire 1 s Dout4 [5] $end
+$var wire 1 t Dout4 [4] $end
+$var wire 1 u Dout4 [3] $end
+$var wire 1 v Dout4 [2] $end
+$var wire 1 w Dout4 [1] $end
+$var wire 1 x Dout4 [0] $end
+$var wire 1 y Dout5 [7] $end
+$var wire 1 z Dout5 [6] $end
+$var wire 1 { Dout5 [5] $end
+$var wire 1 | Dout5 [4] $end
+$var wire 1 } Dout5 [3] $end
+$var wire 1 ~ Dout5 [2] $end
+$var wire 1 !! Dout5 [1] $end
+$var wire 1 "! Dout5 [0] $end
+$var wire 1 #! Dout6 [7] $end
+$var wire 1 $! Dout6 [6] $end
+$var wire 1 %! Dout6 [5] $end
+$var wire 1 &! Dout6 [4] $end
+$var wire 1 '! Dout6 [3] $end
+$var wire 1 (! Dout6 [2] $end
+$var wire 1 )! Dout6 [1] $end
+$var wire 1 *! Dout6 [0] $end
+$var wire 1 +! Dout7 [7] $end
+$var wire 1 ,! Dout7 [6] $end
+$var wire 1 -! Dout7 [5] $end
+$var wire 1 .! Dout7 [4] $end
+$var wire 1 /! Dout7 [3] $end
+$var wire 1 0! Dout7 [2] $end
+$var wire 1 1! Dout7 [1] $end
+$var wire 1 2! Dout7 [0] $end
+$var wire 1 3! Dout8 [7] $end
+$var wire 1 4! Dout8 [6] $end
+$var wire 1 5! Dout8 [5] $end
+$var wire 1 6! Dout8 [4] $end
+$var wire 1 7! Dout8 [3] $end
+$var wire 1 8! Dout8 [2] $end
+$var wire 1 9! Dout8 [1] $end
+$var wire 1 :! Dout8 [0] $end
+$var wire 1 ;! Dout9 [7] $end
+$var wire 1 <! Dout9 [6] $end
+$var wire 1 =! Dout9 [5] $end
+$var wire 1 >! Dout9 [4] $end
+$var wire 1 ?! Dout9 [3] $end
+$var wire 1 @! Dout9 [2] $end
+$var wire 1 A! Dout9 [1] $end
+$var wire 1 B! Dout9 [0] $end
+$var reg 1 C! CHK $end
+$var reg 1 D! CLK $end
+$var reg 8 E! Din [7:0] $end
+$var reg 1 F! RST $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+00
+0/
+0.
+0(
+0C!
+0D!
+b0 E!
+1F!
+0-
+0,
+0+
+0*
+0)
+08
+07
+06
+05
+04
+03
+02
+01
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0h
+0g
+0f
+0e
+0d
+0c
+0b
+0a
+0p
+0o
+0n
+0m
+0l
+0k
+0j
+0i
+0x
+0w
+0v
+0u
+0t
+0s
+0r
+0q
+0"!
+0!!
+0~
+0}
+0|
+0{
+0z
+0y
+0*!
+0)!
+0(!
+0'!
+0&!
+0%!
+0$!
+0#!
+02!
+01!
+00!
+0/!
+0.!
+0-!
+0,!
+0+!
+0:!
+09!
+08!
+07!
+06!
+05!
+04!
+03!
+0B!
+0A!
+0@!
+0?!
+0>!
+0=!
+0<!
+0;!
+$end
+#50000
+1D!
+#100000
+0D!
+#150000
+1D!
+#200000
+0D!
+0F!
+#250000
+1D!
+#300000
+0D!
+#350000
+1D!
+#400000
+0D!
+b100000 E!
+#450000
+1D!
+#500000
+1C!
+0D!
+#550000
+1D!
+1[
+#600000
+0C!
+0D!
+#650000
+1D!
+#700000
+0D!
+#750000
+1D!
+#800000
+0D!
+#850000
+1D!
+#900000
+0D!
+b0 E!
+#950000
+1D!
+#1000000
+0D!
+#1050000
+1D!
+#1100000
+0D!
+b1000000 E!
+#1150000
+1D!
+#1200000
+1C!
+0D!
+#1250000
+1D!
+1S
+0[
+1Z
+#1300000
+0C!
+0D!
+#1350000
+1D!
+#1400000
+0D!
+#1450000
+1D!
+#1500000
+0D!
+b0 E!
+#1550000
+1D!
+#1600000
+0D!
+#1650000
+1D!
+#1700000
+1C!
+0D!
+b100 E!
+#1750000
+1D!
+1K
+0S
+1R
+1^
+0Z
+#1800000
+0C!
+0D!
+#1850000
+1D!
+#1900000
+0D!
+#1950000
+1D!
+#2000000
+0D!
+#2050000
+1D!
+#2100000
+0D!
+b0 E!
+#2150000
+1D!
+#2200000
+0D!
+#2250000
+1D!
+#2300000
+0D!
+b10000 E!
+#2350000
+1D!
+#2400000
+1C!
+0D!
+#2450000
+1D!
+1C
+0K
+1J
+1V
+0R
+0^
+1\
+#2500000
+0C!
+0D!
+#2550000
+1D!
+#2600000
+0D!
+b0 E!
+#2650000
+1D!
+#2700000
+0D!
+#2750000
+1D!
+#2800000
+0D!
+#2850000
+1D!
+#2900000
+0D!
+#2950000
+1D!
+#3000000
+0D!
+b1 E!
+#3050000
+1D!
+#3100000
+1C!
+0D!
+#3150000
+1D!
+1;
+0C
+1B
+1N
+0J
+0V
+1T
+1`
+0\
+#3200000
+0C!
+0D!
+#3250000
+1D!
+#3300000
+0D!
+#3350000
+1D!
+#3400000
+0D!
+b0 E!
+#3450000
+1D!
+#3500000
+0D!
+#3550000
+1D!
+#3600000
+0D!
+b100 E!
+#3650000
+1D!
+#3700000
+1C!
+0D!
+#3750000
+1D!
+13
+0;
+1:
+1F
+0B
+0N
+1L
+1X
+0T
+0`
+1^
+#3800000
+0C!
+0D!
+#3850000
+1D!
+#3900000
+0D!
+#3950000
+1D!
+#4000000
+0D!
+#4050000
+1D!
+#4100000
+0D!
+b0 E!
+#4150000
+1D!
+#4200000
+0D!
+b100000 E!
+#4250000
+1D!
+#4300000
+1C!
+0D!
+#4350000
+1D!
+1+
+03
+12
+1>
+0:
+0F
+1D
+1P
+0L
+0X
+1V
+0^
+1[
+#4400000
+0C!
+0D!
+#4450000
+1D!
+#4500000
+0D!
+#4550000
+1D!
+#4600000
+0D!
+b0 E!
+#4650000
+1D!
+#4700000
+0D!
+#4750000
+1D!
+#4800000
+0D!
+#4850000
+1D!
+#4900000
+0D!
+#4950000
+1D!
+#5000000
+0D!
+b1000 E!
+#5050000
+1D!
+#5100000
+1C!
+0D!
+#5150000
+1D!
+0+
+1*
+16
+02
+0>
+1<
+1H
+0D
+0P
+1N
+0V
+1S
+1]
+0[
+1=!
+#5200000
+0C!
+0D!
+#5250000
+1D!
+#5300000
+0D!
+#5350000
+1D!
+#5400000
+0D!
+#5450000
+1D!
+#5500000
+0D!
+b0 E!
+#5550000
+1D!
+#5600000
+0D!
+#5650000
+1D!
+#5700000
+0D!
+#5750000
+1D!
+#5800000
+0D!
+b100000 E!
+#5850000
+1D!
+#5900000
+1C!
+0D!
+#5950000
+1.
+1D!
+0*
+06
+14
+1@
+0<
+0H
+1F
+0N
+1K
+1U
+0S
+0]
+1[
+15!
+0=!
+1<!
+#6000000
+0C!
+0D!
+#6050000
+1D!
+#6100000
+0D!
+#6150000
+1D!
+#6200000
+0D!
+#6250000
+1D!
+#6300000
+0D!
+b0 E!
+#6350000
+1D!
+#6400000
+0D!
+#6450000
+1D!
+#6500000
+0D!
+b1 E!
+#6550000
+1D!
+#6600000
+1C!
+0D!
+#6650000
+0.
+1D!
+1,
+18
+04
+0@
+1>
+0F
+1C
+1M
+0K
+0U
+1S
+1`
+0[
+1-!
+05!
+14!
+1@!
+0<!
+#6700000
+0C!
+0D!
+#6750000
+1D!
+#6800000
+0D!
+#6850000
+1D!
+#6900000
+0D!
+#6950000
+1D!
+#7000000
+0D!
+b0 E!
+#7050000
+1D!
+#7100000
+0D!
+#7150000
+1D!
+#7200000
+0D!
+#7250000
+1D!
+#7300000
+0D!
+#7350000
+1D!
+#7400000
+0D!
+#7450000
+1D!
+#7500000
+0D!
+#7550000
+1D!
+#7600000
+0D!
+#7650000
+1D!
+#7700000
+0D!
+#7750000
+1D!
+#7800000
+0D!
+#7850000
+1D!
+#7900000
+0D!
+#7950000
+1D!
+#8000000
+0D!
+#8050000
+1D!
+#8100000
+0D!
+#8150000
+1D!
+#8200000
+0D!
+#8250000
+1D!
+#8300000
+0D!
+#8350000
+1D!
+#8400000
+0D!
+#8450000
+1D!
+#8500000
+0D!
+#8550000
+1D!
+#8600000
+0D!
+#8650000
+1D!
+#8700000
+0D!
+#8750000
+1D!
+#8800000
+0D!
+#8850000
+1D!
+#8900000
+0D!
+#8950000
+1D!
+#9000000
+0D!
+#9050000
+1D!
+#9100000
+0D!
+#9150000
+1D!
+#9200000
+0D!
+#9250000
+1D!
+#9300000
+0D!
+#9350000
+1D!
+#9400000
+0D!
+#9450000
+1D!
+#9500000
+0D!
+#9550000
+1D!
+#9600000
+0D!
+#9650000
+1D!
+#9700000
+0D!
+#9750000
+1D!
+#9800000
+0D!
+#9850000
+1D!
+#9900000
+0D!
+#9950000
+1D!

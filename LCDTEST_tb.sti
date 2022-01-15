@@ -1,0 +1,541 @@
+StimulianSaveFile
+LanguageType Verilog
+tbModuleName LCDTEST_tb
+ModuleName LCDTEST
+TimeUnit ns
+TotalTime 10000
+GridInterval 100
+Parameters
+End
+Port
+-1 'H 1 Binary CLK singlebit in 0 0 PortEnd 0
+-1 'I 0 Binary Keypad multibit in 11 0 Children 'U [11] 'V [10] 'W [9] 'X [8] 'Y [7] 'Z [6] '[ [5] '\ [4] '] [3] '^ [2] '_ [1] '` [0] ChildrenEnd PortEnd 0
+-1 *Z 1 Binary RST singlebit in 0 0 PortEnd 0
+0 'G 1 Binary CHK singlebit out 0 0 PortEnd 0
+0 'a 0 Binary LCD_DATA multibit out 7 0 Children 'i [7] 'j [6] 'k [5] 'l [4] 'm [3] 'n [2] 'o [1] 'p [0] ChildrenEnd PortEnd 0
+0 'q 1 Binary LCD_E singlebit out 0 0 PortEnd 0
+0 'r 1 Binary LCD_RS singlebit out 0 0 PortEnd 0
+0 's 1 Binary LCD_RW singlebit out 0 0 PortEnd 0
+0 't 0 Binary Out_PlainText1 multibit out 7 0 Children '| [7] '} [6] '~ [5] (! [4] (" [3] (# [2] ($ [1] (% [0] ChildrenEnd PortEnd 0
+0 (& 0 Binary Out_PlainText10 multibit out 7 0 Children (. [7] (/ [6] (0 [5] (1 [4] (2 [3] (3 [2] (4 [1] (5 [0] ChildrenEnd PortEnd 0
+0 (6 0 Binary Out_PlainText11 multibit out 7 0 Children (> [7] (? [6] (@ [5] (A [4] (B [3] (C [2] (D [1] (E [0] ChildrenEnd PortEnd 0
+0 (F 0 Binary Out_PlainText12 multibit out 7 0 Children (N [7] (O [6] (P [5] (Q [4] (R [3] (S [2] (T [1] (U [0] ChildrenEnd PortEnd 0
+0 (V 0 Binary Out_PlainText13 multibit out 7 0 Children (^ [7] (_ [6] (` [5] (a [4] (b [3] (c [2] (d [1] (e [0] ChildrenEnd PortEnd 0
+0 (f 0 Binary Out_PlainText14 multibit out 7 0 Children (n [7] (o [6] (p [5] (q [4] (r [3] (s [2] (t [1] (u [0] ChildrenEnd PortEnd 0
+0 (v 0 Binary Out_PlainText15 multibit out 7 0 Children (~ [7] )! [6] )" [5] )# [4] )$ [3] )% [2] )& [1] )' [0] ChildrenEnd PortEnd 0
+0 )( 0 Binary Out_PlainText16 multibit out 7 0 Children )0 [7] )1 [6] )2 [5] )3 [4] )4 [3] )5 [2] )6 [1] )7 [0] ChildrenEnd PortEnd 0
+0 )8 0 Binary Out_PlainText2 multibit out 7 0 Children )@ [7] )A [6] )B [5] )C [4] )D [3] )E [2] )F [1] )G [0] ChildrenEnd PortEnd 0
+0 )H 0 Binary Out_PlainText3 multibit out 7 0 Children )P [7] )Q [6] )R [5] )S [4] )T [3] )U [2] )V [1] )W [0] ChildrenEnd PortEnd 0
+0 )X 0 Binary Out_PlainText4 multibit out 7 0 Children )` [7] )a [6] )b [5] )c [4] )d [3] )e [2] )f [1] )g [0] ChildrenEnd PortEnd 0
+0 )h 0 Binary Out_PlainText5 multibit out 7 0 Children )p [7] )q [6] )r [5] )s [4] )t [3] )u [2] )v [1] )w [0] ChildrenEnd PortEnd 0
+0 )x 0 Binary Out_PlainText6 multibit out 7 0 Children *" [7] *# [6] *$ [5] *% [4] *& [3] *' [2] *( [1] *) [0] ChildrenEnd PortEnd 0
+0 ** 0 Binary Out_PlainText7 multibit out 7 0 Children *2 [7] *3 [6] *4 [5] *5 [4] *6 [3] *7 [2] *8 [1] *9 [0] ChildrenEnd PortEnd 0
+0 *: 0 Binary Out_PlainText8 multibit out 7 0 Children *B [7] *C [6] *D [5] *E [4] *F [3] *G [2] *H [1] *I [0] ChildrenEnd PortEnd 0
+0 *J 0 Binary Out_PlainText9 multibit out 7 0 Children *R [7] *S [6] *T [5] *U [4] *V [3] *W [2] *X [1] *Y [0] ChildrenEnd PortEnd 0
+End
+pixelTimeRatio 5
+HorzZoomOutScale 40
+WavesHorzScrollBarMax 851942
+WavesHorzScrollBarPosition 851942
+WavesHorzScrollBarEnabled -1
+DefaultVertInterval 32
+UnScaledDefaultVertInterval 16
+UnScaledDefaultVertSignalHeight 10
+WavesVertScrollBarMax 100
+WavesVertScrollBarPosition 0
+WavesVertScrollBarEnabled 0
+Vars
+s'G
+t0
+0 0 1 0
+s'H
+t0
+0 100 100 0
+50 100 100 1
+s'U
+t0
+0 0 1 0
+s'V
+t0
+0 3600 2 0
+3200 0 1 1
+s'W
+t0
+0 0 1 0
+5600 0 1 1
+6000 0 1 0
+s'X
+t0
+0 2400 2 0
+1800 0 1 1
+s'Y
+t0
+0 0 1 0
+s'Z
+t0
+0 9500 2 0
+3700 2700 2 1
+4200 2700 2 0
+8900 0 1 1
+s'[
+t0
+0 3000 2 0
+2500 0 1 1
+s'\
+t0
+0 1400 2 0
+1000 7100 2 1
+8700 0 1 0
+s']
+t0
+0 5200 2 0
+4800 0 1 1
+s'^
+t0
+0 0 1 0
+s'_
+t0
+0 4700 2 0
+4300 3300 2 1
+8000 0 1 0
+s'`
+t0
+0 800 2 0
+400 6600 2 1
+7500 0 1 0
+s'i
+t0
+0 0 1 0
+s'j
+t0
+0 0 1 0
+s'k
+t0
+0 0 1 0
+s'l
+t0
+0 0 1 0
+s'm
+t0
+0 0 1 0
+s'n
+t0
+0 0 1 0
+s'o
+t0
+0 0 1 0
+s'p
+t0
+0 0 1 0
+s'q
+t0
+0 0 1 0
+s'r
+t0
+0 0 1 0
+s's
+t0
+0 0 1 0
+s'|
+t0
+0 0 1 0
+s'}
+t0
+0 0 1 0
+s'~
+t0
+0 0 1 0
+s(!
+t0
+0 0 1 0
+s("
+t0
+0 0 1 0
+s(#
+t0
+0 0 1 0
+s($
+t0
+0 0 1 0
+s(%
+t0
+0 0 1 0
+s(.
+t0
+0 0 1 0
+s(/
+t0
+0 0 1 0
+s(0
+t0
+0 0 1 0
+s(1
+t0
+0 0 1 0
+s(2
+t0
+0 0 1 0
+s(3
+t0
+0 0 1 0
+s(4
+t0
+0 0 1 0
+s(5
+t0
+0 0 1 0
+s(>
+t0
+0 0 1 0
+s(?
+t0
+0 0 1 0
+s(@
+t0
+0 0 1 0
+s(A
+t0
+0 0 1 0
+s(B
+t0
+0 0 1 0
+s(C
+t0
+0 0 1 0
+s(D
+t0
+0 0 1 0
+s(E
+t0
+0 0 1 0
+s(N
+t0
+0 0 1 0
+s(O
+t0
+0 0 1 0
+s(P
+t0
+0 0 1 0
+s(Q
+t0
+0 0 1 0
+s(R
+t0
+0 0 1 0
+s(S
+t0
+0 0 1 0
+s(T
+t0
+0 0 1 0
+s(U
+t0
+0 0 1 0
+s(^
+t0
+0 0 1 0
+s(_
+t0
+0 0 1 0
+s(`
+t0
+0 0 1 0
+s(a
+t0
+0 0 1 0
+s(b
+t0
+0 0 1 0
+s(c
+t0
+0 0 1 0
+s(d
+t0
+0 0 1 0
+s(e
+t0
+0 0 1 0
+s(n
+t0
+0 0 1 0
+s(o
+t0
+0 0 1 0
+s(p
+t0
+0 0 1 0
+s(q
+t0
+0 0 1 0
+s(r
+t0
+0 0 1 0
+s(s
+t0
+0 0 1 0
+s(t
+t0
+0 0 1 0
+s(u
+t0
+0 0 1 0
+s(~
+t0
+0 0 1 0
+s)!
+t0
+0 0 1 0
+s)"
+t0
+0 0 1 0
+s)#
+t0
+0 0 1 0
+s)$
+t0
+0 0 1 0
+s)%
+t0
+0 0 1 0
+s)&
+t0
+0 0 1 0
+s)'
+t0
+0 0 1 0
+s)0
+t0
+0 0 1 0
+s)1
+t0
+0 0 1 0
+s)2
+t0
+0 0 1 0
+s)3
+t0
+0 0 1 0
+s)4
+t0
+0 0 1 0
+s)5
+t0
+0 0 1 0
+s)6
+t0
+0 0 1 0
+s)7
+t0
+0 0 1 0
+s)@
+t0
+0 0 1 0
+s)A
+t0
+0 0 1 0
+s)B
+t0
+0 0 1 0
+s)C
+t0
+0 0 1 0
+s)D
+t0
+0 0 1 0
+s)E
+t0
+0 0 1 0
+s)F
+t0
+0 0 1 0
+s)G
+t0
+0 0 1 0
+s)P
+t0
+0 0 1 0
+s)Q
+t0
+0 0 1 0
+s)R
+t0
+0 0 1 0
+s)S
+t0
+0 0 1 0
+s)T
+t0
+0 0 1 0
+s)U
+t0
+0 0 1 0
+s)V
+t0
+0 0 1 0
+s)W
+t0
+0 0 1 0
+s)`
+t0
+0 0 1 0
+s)a
+t0
+0 0 1 0
+s)b
+t0
+0 0 1 0
+s)c
+t0
+0 0 1 0
+s)d
+t0
+0 0 1 0
+s)e
+t0
+0 0 1 0
+s)f
+t0
+0 0 1 0
+s)g
+t0
+0 0 1 0
+s)p
+t0
+0 0 1 0
+s)q
+t0
+0 0 1 0
+s)r
+t0
+0 0 1 0
+s)s
+t0
+0 0 1 0
+s)t
+t0
+0 0 1 0
+s)u
+t0
+0 0 1 0
+s)v
+t0
+0 0 1 0
+s)w
+t0
+0 0 1 0
+s*"
+t0
+0 0 1 0
+s*#
+t0
+0 0 1 0
+s*$
+t0
+0 0 1 0
+s*%
+t0
+0 0 1 0
+s*&
+t0
+0 0 1 0
+s*'
+t0
+0 0 1 0
+s*(
+t0
+0 0 1 0
+s*)
+t0
+0 0 1 0
+s*2
+t0
+0 0 1 0
+s*3
+t0
+0 0 1 0
+s*4
+t0
+0 0 1 0
+s*5
+t0
+0 0 1 0
+s*6
+t0
+0 0 1 0
+s*7
+t0
+0 0 1 0
+s*8
+t0
+0 0 1 0
+s*9
+t0
+0 0 1 0
+s*B
+t0
+0 0 1 0
+s*C
+t0
+0 0 1 0
+s*D
+t0
+0 0 1 0
+s*E
+t0
+0 0 1 0
+s*F
+t0
+0 0 1 0
+s*G
+t0
+0 0 1 0
+s*H
+t0
+0 0 1 0
+s*I
+t0
+0 0 1 0
+s*R
+t0
+0 0 1 0
+s*S
+t0
+0 0 1 0
+s*T
+t0
+0 0 1 0
+s*U
+t0
+0 0 1 0
+s*V
+t0
+0 0 1 0
+s*W
+t0
+0 0 1 0
+s*X
+t0
+0 0 1 0
+s*Y
+t0
+0 0 1 0
+s*Z
+t0
+0 0 1 1
+200 0 1 0
+End
+Cursors
+9500
+End
+ActiveCursorIndex 0
+versionCode
+20070511
+psrFileName
+C:\Flowrian\_analyze\LCDTEST.psr
+systemCExportSimulationTime
+10000
+systemCExportSimulationTimeUnit
+10000
+systemCProbes
+End

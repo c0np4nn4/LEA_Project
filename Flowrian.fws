@@ -1,0 +1,9 @@
+[workspace]
+description=
+author=
+projectn=2
+currentprojectindex=0
+[project0]
+filename=LEA.fprj
+[project1]
+filename=LCD.fprj

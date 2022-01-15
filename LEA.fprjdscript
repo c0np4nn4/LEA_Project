@@ -1,0 +1,103 @@
+if [ -f   /opt/Xilinx/14.1/ISE_DS/settings32.sh ]; then 
+ source /opt/Xilinx/14.1/ISE_DS/settings32.sh >> /tmp/log 
+fi
+if [ -f   /opt/Xilinx/14.1/ISE_DS/settings64.sh ]; then
+ source /opt/Xilinx/14.1/ISE_DS/settings64.sh >> /tmp/log
+fi
+ 
+echo PNULib= $FLOWRIANLIBRARY/PNULib/ISim/PNULib >> LEA_BlockSubtractor_tb.init
+echo work=./work >> LEA_BlockSubtractor_tb.init
+echo verilog work PNU_OR2.v >> LEA_BlockSubtractor_tb.prj
+echo verilog work PNU_AND2.v >> LEA_BlockSubtractor_tb.prj
+echo verilog work PNU_XOR2.v >> LEA_BlockSubtractor_tb.prj
+echo verilog work PNU_NOT.v >> LEA_BlockSubtractor_tb.prj
+echo verilog work PNU_ONE.v >> LEA_BlockSubtractor_tb.prj
+echo verilog work LEA_FinAdder.v >> LEA_BlockSubtractor_tb.prj
+echo verilog work LEA_FullAdder.v >> LEA_BlockSubtractor_tb.prj
+echo verilog work LEA_BlockSubtractor.v >> LEA_BlockSubtractor_tb.prj
+echo verilog work LEA_BlockSubtractor_tb.v >> LEA_BlockSubtractor_tb.prj
+echo vcd dumpfile LEA_BlockSubtractor_tb.vcd >> LEA_BlockSubtractor_tb.tcl
+echo vcd dumpvars -m /LEA_BlockSubtractor_tb -l 1 >> LEA_BlockSubtractor_tb.tcl
+echo run 10000 ns >> LEA_BlockSubtractor_tb.tcl
+echo vcd dumpflush >> LEA_BlockSubtractor_tb.tcl
+echo quit -f >> LEA_BlockSubtractor_tb.tcl
+fuse -top work.LEA_BlockSubtractor_tb -init LEA_BlockSubtractor_tb.init -prj LEA_BlockSubtractor_tb.prj  -lib PNULib -o LEA_BlockSubtractor_tb.exe
+./LEA_BlockSubtractor_tb.exe -tclbatch LEA_BlockSubtractor_tb.tcl
+rm LEA_BlockSubtractor_tb.tcl
+rm LEA_BlockSubtractor_tb.init
+rm LEA_BlockSubtractor_tb.prj
+rm fuse.xmsgs
+rm fuseRelaunch.cmd
+rm isim.wdb
+rm -f LEA_BlockSubtractor_tb.exe fuse.log isim.log
+rm -rf isim
+rm list of verilog or VHDL files
+rm -rf ./work
+rm -rf PNU_AND2.v
+rm -rf PNU_AND3.v
+rm -rf PNU_AND4.v
+rm -rf PNU_AND8.v
+rm -rf PNU_BUF.v
+rm -rf PNU_DFF.v
+rm -rf PNU_DFF_Ce.v
+rm -rf PNU_JKFF.v
+rm -rf PNU_MUX2.v
+rm -rf PNU_MUX4.v
+rm -rf PNU_MUX8.v
+rm -rf PNU_NAND2.v
+rm -rf PNU_NAND3.v
+rm -rf PNU_NAND4.v
+rm -rf PNU_NAND8.v
+rm -rf PNU_NOR2.v
+rm -rf PNU_NOR3.v
+rm -rf PNU_NOR4.v
+rm -rf PNU_NOR8.v
+rm -rf PNU_NOT.v
+rm -rf PNU_ONE.v
+rm -rf PNU_OR2.v
+rm -rf PNU_OR3.v
+rm -rf PNU_OR4.v
+rm -rf PNU_OR8.v
+rm -rf PNU_SRAM.v
+rm -rf PNU_TBUF.v
+rm -rf PNU_XNOR2.v
+rm -rf PNU_XNOR3.v
+rm -rf PNU_XNOR4.v
+rm -rf PNU_XOR2.v
+rm -rf PNU_XOR3.v
+rm -rf PNU_XOR4.v
+rm -rf PNU_ZERO.v
+rm -rf LEA_32bitBlock.v
+rm -rf LEA_128bitMessageRegister.v
+rm -rf LEA_BlockXOR.v
+rm -rf LEA_TwoAdder.v
+rm -rf LEA_FullAdder.v
+rm -rf LEA_FinAdder.v
+rm -rf LEA_TwoAdder_tb.v
+rm -rf LEA_FullAdder_tb.v
+rm -rf LEA_PASS.v
+rm -rf LEA_ROL9.v
+rm -rf LEA_ROR3.v
+rm -rf LEA_ROR5.v
+rm -rf LEA_BlockXOR_tb.v
+rm -rf LEA_Encrypt.v
+rm -rf LEA_Encrypt_tb.v
+rm -rf LEA_BlockAddition.v
+rm -rf LEA_128BitsDivideIn16x8Register.v
+rm -rf LEA_128BitsDivideIn16x8Register_tb.v
+rm -rf LEA_16Counter.v
+rm -rf LEA_16Counter_tb.v
+rm -rf LEA_KeyConstant.v
+rm -rf LEA_KeyConstant_tb.v
+rm -rf LEA_ROL3.v
+rm -rf LEA_ROL5.v
+rm -rf LEA_ROR9.v
+rm -rf LEA_FinSub.v
+rm -rf LEA_FullSub.v
+rm -rf Subtest.v
+rm -rf Subtest_tb.v
+rm -rf LEA_2sComplement.v
+rm -rf LEA_2sComplement_tb.v
+rm -rf LEA_BlockSubtractor.v
+rm -rf LEA_BlockSubtractor_tb.v
+echo Finish simulation!!
